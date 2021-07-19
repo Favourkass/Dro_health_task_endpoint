@@ -2,7 +2,7 @@ from rest_framework import serializers
 
 
 class CycleSerializer(serializers.Serializer):
-    Last_period_date = serializers.DateField()
+    last_period_date = serializers.DateField()
     cycle_average=serializers.CharField()
     period_average=serializers.CharField()
     start_date=serializers.DateField()
