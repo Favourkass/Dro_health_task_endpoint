@@ -43,6 +43,7 @@ class CreateCycleTest(APITestCase):
         self.client.force_authenticate(user=self.sample_user)
         res = self.client.post(
             self.valid_url,
+            self.valid_payload,
             self.update_payload,
             format='json'
         )
@@ -62,6 +63,7 @@ class CreateCycleTest(APITestCase):
         self.client.force_authenticate(user=self.sample_user)
         res = self.client.post(
             self.valid_url,
+            self.valid_payload,
             self.update_payload,
             format='json'
         )
